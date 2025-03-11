@@ -1,0 +1,10 @@
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\bin\Debug\QLTK Nro Pro.exe.config
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\bin\Debug\QLTK Nro Pro.exe
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\bin\Debug\QLTK Nro Pro.pdb
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK Nro Pro.csproj.AssemblyReference.cache
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK_Nro_Pro.Form1.resources
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK_Nro_Pro.Properties.Resources.resources
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK Nro Pro.csproj.GenerateResource.cache
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK Nro Pro.csproj.CoreCompileInputs.cache
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK Nro Pro.exe
+C:\Users\Cuong Le\Desktop\C# winform\QLTK Nro Pro\QLTK Nro Pro\obj\Debug\QLTK Nro Pro.pdb

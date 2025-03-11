@@ -1,0 +1,31 @@
+Lệnh chat:
++> cuongle: tinhnang dat biet
+
+Phím tắt:
++> A: tự đánh
++> B: mở danh sách bạn bè
++> C: sử dụng capsule
++> D: đóng băng skill hiện tại
++> E: auto hồi sinh
++> F: sử dụng bông tai(tách hợp thể = đệ về nhà)
++> G: giao dịch
++> I: khóa mục tiêu khi có trong map
++> J: load map trái (trong nrd load đến đầu map)
++> K: load map giữa (trong nrd load đến giữa map - npc)
++> L: load map phải (trong nrd load đến cuối map)
++> M: mở bảng đổi khu
++> N: show Menu nhặt, trong ngọc rồng đen tự động bật/tắt nhanh
++> O: bật auto vào nrd nhanh theo map X và khu Y đã cài ở lệnh chat nrd_X_Y
++> P: kết nối đến auto manager
++> Q: nhặt item
++> T: dùng tdlt
++> X: Mở menu tiện ích (toàn bộ tính năng của tool ở đây)
++> S: chuyển mục tiêu giữa các boss
++> F1: mở hành trang
++> F2, Tab: đổi mục tiêu
++> 9: Mặc set đồ 1
++> 0: mặc set đồ 2
+
+Lưu ý:
+- Đối với người sử dụng QLTK thì nên giải nén và sau khi điền nik vào QLTK thì muốn đăng nhập nik nào thì click đúp chuột vào nik cần onl bên danh sách là được
+- Mọi tính năng của tool đều tập trung trong phím tắt X, ae bấm X để khám phá tính năng và sử dụng, phiên bản rất nhiều tính năng hay nhưng vận dụng sao là cách dùng của ae
