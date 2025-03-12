@@ -57,7 +57,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtY = new System.Windows.Forms.TextBox();
             this.txtX = new System.Windows.Forms.TextBox();
-            this.button67 = new System.Windows.Forms.Button();
             this.btn_sapXep = new System.Windows.Forms.Button();
             this.btn_dong = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
@@ -176,6 +175,7 @@
             this.btnCapNhap = new System.Windows.Forms.Button();
             this.btnZaloSuper2 = new System.Windows.Forms.Button();
             this.btnfb = new System.Windows.Forms.Button();
+            this.button100 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -307,10 +307,10 @@
             // 
             this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_xoa.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_xoa.Location = new System.Drawing.Point(421, 121);
+            this.btn_xoa.Location = new System.Drawing.Point(287, 155);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(138, 34);
+            this.btn_xoa.Size = new System.Drawing.Size(105, 34);
             this.btn_xoa.TabIndex = 9;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
@@ -320,10 +320,10 @@
             // 
             this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_them.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_them.Location = new System.Drawing.Point(421, 14);
+            this.btn_them.Location = new System.Drawing.Point(12, 155);
             this.btn_them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(138, 34);
+            this.btn_them.Size = new System.Drawing.Size(105, 34);
             this.btn_them.TabIndex = 8;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
@@ -426,7 +426,6 @@
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.txt_server);
-            this.tabPage1.Controls.Add(this.button67);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.btn_sapXep);
             this.tabPage1.Controls.Add(this.label2);
@@ -445,7 +444,7 @@
             // 
             // txtGlobal
             // 
-            this.txtGlobal.Location = new System.Drawing.Point(7, 297);
+            this.txtGlobal.Location = new System.Drawing.Point(10, 287);
             this.txtGlobal.Multiline = true;
             this.txtGlobal.Name = "txtGlobal";
             this.txtGlobal.Size = new System.Drawing.Size(296, 28);
@@ -453,7 +452,7 @@
             // 
             // txtInbox
             // 
-            this.txtInbox.Location = new System.Drawing.Point(7, 331);
+            this.txtInbox.Location = new System.Drawing.Point(10, 321);
             this.txtInbox.Multiline = true;
             this.txtInbox.Name = "txtInbox";
             this.txtInbox.Size = new System.Drawing.Size(296, 28);
@@ -461,7 +460,7 @@
             // 
             // txtPublic
             // 
-            this.txtPublic.Location = new System.Drawing.Point(7, 262);
+            this.txtPublic.Location = new System.Drawing.Point(10, 253);
             this.txtPublic.Multiline = true;
             this.txtPublic.Name = "txtPublic";
             this.txtPublic.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -471,7 +470,7 @@
             // button68
             // 
             this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button68.Location = new System.Drawing.Point(8, 222);
+            this.button68.Location = new System.Drawing.Point(12, 212);
             this.button68.Margin = new System.Windows.Forms.Padding(4);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(126, 34);
@@ -486,18 +485,18 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtY);
             this.groupBox2.Controls.Add(this.txtX);
-            this.groupBox2.Location = new System.Drawing.Point(316, 217);
+            this.groupBox2.Location = new System.Drawing.Point(316, 242);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 138);
+            this.groupBox2.Size = new System.Drawing.Size(243, 113);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kích Thước game";
             // 
             // btnUpdateSize
             // 
-            this.btnUpdateSize.Location = new System.Drawing.Point(39, 84);
+            this.btnUpdateSize.Location = new System.Drawing.Point(51, 61);
             this.btnUpdateSize.Name = "btnUpdateSize";
-            this.btnUpdateSize.Size = new System.Drawing.Size(186, 38);
+            this.btnUpdateSize.Size = new System.Drawing.Size(133, 43);
             this.btnUpdateSize.TabIndex = 17;
             this.btnUpdateSize.Text = "Update";
             this.btnUpdateSize.UseVisualStyleBackColor = true;
@@ -505,58 +504,48 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 52);
+            this.label5.Location = new System.Drawing.Point(101, 27);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 21);
+            this.label5.Size = new System.Drawing.Size(31, 28);
             this.label5.TabIndex = 16;
             this.label5.Text = "X";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtY
             // 
-            this.txtY.Location = new System.Drawing.Point(147, 45);
+            this.txtY.Location = new System.Drawing.Point(137, 27);
+            this.txtY.Multiline = true;
             this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(78, 28);
+            this.txtY.Size = new System.Drawing.Size(47, 28);
             this.txtY.TabIndex = 15;
             // 
             // txtX
             // 
-            this.txtX.Location = new System.Drawing.Point(39, 45);
+            this.txtX.Location = new System.Drawing.Point(48, 28);
+            this.txtX.Multiline = true;
             this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(78, 28);
+            this.txtX.Size = new System.Drawing.Size(47, 28);
             this.txtX.TabIndex = 14;
-            // 
-            // button67
-            // 
-            this.button67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button67.Location = new System.Drawing.Point(275, 175);
-            this.button67.Margin = new System.Windows.Forms.Padding(4);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(158, 34);
-            this.button67.TabIndex = 13;
-            this.button67.Text = "Reset Next Map";
-            this.button67.UseVisualStyleBackColor = true;
-            this.button67.Click += new System.EventHandler(this.button67_Click);
             // 
             // btn_sapXep
             // 
             this.btn_sapXep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sapXep.Location = new System.Drawing.Point(145, 175);
+            this.btn_sapXep.Location = new System.Drawing.Point(421, 83);
             this.btn_sapXep.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sapXep.Name = "btn_sapXep";
-            this.btn_sapXep.Size = new System.Drawing.Size(120, 34);
+            this.btn_sapXep.Size = new System.Drawing.Size(126, 49);
             this.btn_sapXep.TabIndex = 12;
-            this.btn_sapXep.Text = "Sắp Xếp";
+            this.btn_sapXep.Text = "Sắp Xếp tab";
             this.btn_sapXep.UseVisualStyleBackColor = true;
             this.btn_sapXep.Click += new System.EventHandler(this.btn_sapXep_Click);
             // 
             // btn_dong
             // 
             this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dong.Location = new System.Drawing.Point(8, 175);
+            this.btn_dong.Location = new System.Drawing.Point(421, 14);
             this.btn_dong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dong.Name = "btn_dong";
-            this.btn_dong.Size = new System.Drawing.Size(126, 34);
+            this.btn_dong.Size = new System.Drawing.Size(126, 49);
             this.btn_dong.TabIndex = 11;
             this.btn_dong.Text = "Đóng Game";
             this.btn_dong.UseVisualStyleBackColor = true;
@@ -566,10 +555,10 @@
             // 
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sua.ForeColor = System.Drawing.Color.DarkViolet;
-            this.btn_Sua.Location = new System.Drawing.Point(421, 65);
+            this.btn_Sua.Location = new System.Drawing.Point(149, 155);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(138, 34);
+            this.btn_Sua.Size = new System.Drawing.Size(105, 34);
             this.btn_Sua.TabIndex = 10;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
@@ -1912,6 +1901,7 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.button100);
             this.tabPage10.Controls.Add(this.button99);
             this.tabPage10.Location = new System.Drawing.Point(4, 30);
             this.tabPage10.Name = "tabPage10";
@@ -1926,7 +1916,7 @@
             this.button99.BackColor = System.Drawing.Color.Silver;
             this.button99.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button99.ForeColor = System.Drawing.Color.Red;
-            this.button99.Location = new System.Drawing.Point(166, 115);
+            this.button99.Location = new System.Drawing.Point(173, 102);
             this.button99.Name = "button99";
             this.button99.Size = new System.Drawing.Size(203, 72);
             this.button99.TabIndex = 0;
@@ -2038,6 +2028,17 @@
             this.btnfb.Text = "Facebook Cường";
             this.btnfb.UseVisualStyleBackColor = false;
             this.btnfb.Click += new System.EventHandler(this.btnfb_Click);
+            // 
+            // button100
+            // 
+            this.button100.BackColor = System.Drawing.Color.Tan;
+            this.button100.Location = new System.Drawing.Point(345, 257);
+            this.button100.Name = "button100";
+            this.button100.Size = new System.Drawing.Size(200, 52);
+            this.button100.TabIndex = 1;
+            this.button100.Text = "Reset Lỗi Next Map";
+            this.button100.UseVisualStyleBackColor = false;
+            this.button100.Click += new System.EventHandler(this.button100_Click);
             // 
             // Form1
             // 
@@ -2205,7 +2206,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mayChu;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
         private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
-        private System.Windows.Forms.Button button67;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnUpdateSize;
         private System.Windows.Forms.Label label5;
@@ -2225,6 +2225,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbbVersion;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button100;
     }
 }
 

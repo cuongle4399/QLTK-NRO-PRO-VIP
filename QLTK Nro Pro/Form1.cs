@@ -274,7 +274,11 @@ namespace QLTK_Nro_Pro
         {
             int num = 0;  // Vị trí cột
             int num1 = 0; // Vị trí dòng
-
+            if(gameWindows.Count == 0)
+            {
+                MessageBox.Show("Mở game chưa ?????", "Thông báo");
+                return;
+            }
             foreach (IntPtr hWnd in gameWindows)
             {
                 if (hWnd != IntPtr.Zero)
@@ -424,7 +428,7 @@ namespace QLTK_Nro_Pro
         {
             if(int.Parse(txtX.Text) > 720 && int.Parse(txtY.Text) > 320)
             {
-                MessageBox.Show("Yêu cầu kích thước game phải nhỏ hơn 720 x 320 để tránh lỗi", "Thông báo");
+                MessageBox.Show("kích thước game phải nhỏ hơn 720 x 320 để tránh lỗi", "Thông báo");
                 return;
             }
             SortWindows();
@@ -916,13 +920,27 @@ namespace QLTK_Nro_Pro
 
         private void btnUpdateSize_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtX.Text) || string.IsNullOrEmpty(txtY.Text))
+            try
             {
-                MessageBox.Show("Nhập đầy đủ kích thước theo chiều ngang và chiều dọc","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return;
+                if (int.Parse(txtX.Text) < 0 || int.Parse(txtX.Text) > 4000 || int.Parse(txtY.Text) < 0 || int.Parse(txtY.Text) > 4000)
+                {
+                    MessageBox.Show("Kích thước không hợp lệ phải lớn hơn 0 và nhỏ hơn 4000 ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtX.Text) || string.IsNullOrEmpty(txtY.Text))
+                {
+                    MessageBox.Show("Nhập đầy đủ kích thước theo chiều ngang và chiều dọc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                File.WriteAllText(filePath, txtX.Text + '|' + txtY.Text + '|' + '0');
+                MessageBox.Show("Đã cập nhập kích thước game thành công", "Thông báo");
             }
-            File.WriteAllText(filePath, txtX.Text + '|' + txtY.Text + '|' + '0');
-            MessageBox.Show("Đã cập nhập kích thước game thành công", "Thông báo");
+            catch
+            {
+                MessageBox.Show("Lỗi", "Thông báo");
+
+            }
+            
 
         }
 
@@ -987,6 +1005,12 @@ namespace QLTK_Nro_Pro
                 File.WriteAllText(string_3, "244");
                 MessageBox.Show("Bạn đã chọn " + cbbVersion.Text + " làm phiên bản login", "Thông báo");
             }
+        }
+
+        private void button100_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("Data/LoadMap.ini", "F|-1");
+            MessageBox.Show("Đã Khôi phục NextMap khắc phục lỗi", "Thông báo");
         }
     }
 
