@@ -169,6 +169,10 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.button99 = new System.Windows.Forms.Button();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnUpdateVersionNro = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbbVersion = new System.Windows.Forms.ComboBox();
             this.btnCapNhap = new System.Windows.Forms.Button();
             this.btnZaloSuper2 = new System.Windows.Forms.Button();
             this.btnfb = new System.Windows.Forms.Button();
@@ -1932,6 +1936,10 @@
             // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.label7);
+            this.tabPage11.Controls.Add(this.btnUpdateVersionNro);
+            this.tabPage11.Controls.Add(this.label6);
+            this.tabPage11.Controls.Add(this.cbbVersion);
             this.tabPage11.Controls.Add(this.btnCapNhap);
             this.tabPage11.Controls.Add(this.btnZaloSuper2);
             this.tabPage11.Controls.Add(this.btnfb);
@@ -1943,44 +1951,91 @@
             this.tabPage11.Text = "Thông tin Mod";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label7.Location = new System.Drawing.Point(3, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(330, 52);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Lưu ý : Bản 222 login cực nhanh, bản 244 shop ký gửi có hiện tên người ký ";
+            // 
+            // btnUpdateVersionNro
+            // 
+            this.btnUpdateVersionNro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdateVersionNro.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpdateVersionNro.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateVersionNro.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnUpdateVersionNro.Location = new System.Drawing.Point(343, 38);
+            this.btnUpdateVersionNro.Name = "btnUpdateVersionNro";
+            this.btnUpdateVersionNro.Size = new System.Drawing.Size(216, 49);
+            this.btnUpdateVersionNro.TabIndex = 5;
+            this.btnUpdateVersionNro.Text = "Update";
+            this.btnUpdateVersionNro.UseVisualStyleBackColor = false;
+            this.btnUpdateVersionNro.Click += new System.EventHandler(this.btnUpdateVersionNro_Click);
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(331, 29);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Phiên bản nro đang login: ";
+            // 
+            // cbbVersion
+            // 
+            this.cbbVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbVersion.FormattingEnabled = true;
+            this.cbbVersion.Items.AddRange(new object[] {
+            "Dragonball 222",
+            "Dragonball 244"});
+            this.cbbVersion.Location = new System.Drawing.Point(343, 3);
+            this.cbbVersion.Name = "cbbVersion";
+            this.cbbVersion.Size = new System.Drawing.Size(216, 29);
+            this.cbbVersion.TabIndex = 3;
+            // 
             // btnCapNhap
             // 
-            this.btnCapNhap.BackColor = System.Drawing.Color.Turquoise;
+            this.btnCapNhap.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnCapNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapNhap.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhap.ForeColor = System.Drawing.Color.Black;
-            this.btnCapNhap.Location = new System.Drawing.Point(7, 114);
+            this.btnCapNhap.Location = new System.Drawing.Point(343, 199);
             this.btnCapNhap.Name = "btnCapNhap";
-            this.btnCapNhap.Size = new System.Drawing.Size(553, 47);
+            this.btnCapNhap.Size = new System.Drawing.Size(216, 47);
             this.btnCapNhap.TabIndex = 2;
-            this.btnCapNhap.Text = "Cập Nhập phiên bản mod";
+            this.btnCapNhap.Text = "Cập nhập Mod";
             this.btnCapNhap.UseVisualStyleBackColor = false;
             this.btnCapNhap.Click += new System.EventHandler(this.btnCapNhap_Click);
             // 
             // btnZaloSuper2
             // 
+            this.btnZaloSuper2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnZaloSuper2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZaloSuper2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZaloSuper2.ForeColor = System.Drawing.Color.Blue;
-            this.btnZaloSuper2.Location = new System.Drawing.Point(7, 61);
+            this.btnZaloSuper2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZaloSuper2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnZaloSuper2.Location = new System.Drawing.Point(343, 146);
             this.btnZaloSuper2.Name = "btnZaloSuper2";
-            this.btnZaloSuper2.Size = new System.Drawing.Size(553, 47);
+            this.btnZaloSuper2.Size = new System.Drawing.Size(216, 47);
             this.btnZaloSuper2.TabIndex = 1;
-            this.btnZaloSuper2.Text = "Box zalo lớn nhất Nro Super 2";
-            this.btnZaloSuper2.UseVisualStyleBackColor = true;
+            this.btnZaloSuper2.Text = "Box Zalo super 2";
+            this.btnZaloSuper2.UseVisualStyleBackColor = false;
             this.btnZaloSuper2.Click += new System.EventHandler(this.btnZaloSuper2_Click);
             // 
             // btnfb
             // 
-            this.btnfb.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnfb.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnfb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfb.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfb.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfb.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnfb.Location = new System.Drawing.Point(7, 7);
+            this.btnfb.Location = new System.Drawing.Point(343, 93);
             this.btnfb.Name = "btnfb";
-            this.btnfb.Size = new System.Drawing.Size(553, 47);
+            this.btnfb.Size = new System.Drawing.Size(216, 47);
             this.btnfb.TabIndex = 0;
-            this.btnfb.Text = "Facebook Cường Lê";
+            this.btnfb.Text = "Facebook Cường";
             this.btnfb.UseVisualStyleBackColor = false;
             this.btnfb.Click += new System.EventHandler(this.btnfb_Click);
             // 
@@ -2166,6 +2221,10 @@
         private System.Windows.Forms.Button btnCapNhap;
         private System.Windows.Forms.Button btnZaloSuper2;
         private System.Windows.Forms.Button btnfb;
+        private System.Windows.Forms.Button btnUpdateVersionNro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbbVersion;
+        private System.Windows.Forms.Label label7;
     }
 }
 

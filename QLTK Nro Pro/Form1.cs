@@ -19,11 +19,17 @@ namespace QLTK_Nro_Pro
         public static string string_0 = Path.Combine(Path.GetTempPath(), "koi occtiu957", "mod 222");
         public static string string_1 = Path.Combine(string_0, "data");
         public static bool bool_0;
-        public static string string_4 = Path.Combine(Application.StartupPath, "Dragonboy_vn_v222.exe");
-        public static string filePath = "Data/size.ini";
-        public static string ChatPublic = "Data/TextChatPublic.ini";
-        public static string ChatGlobal = "Data/TextChatGlobal.ini";
-        public static string ChatInbox = "Data/TextChatInbox.ini";
+        public static string string_3 = "Data\\version.ini";
+
+        public static string filePath = "Data\\size.ini";
+        public static string ChatPublic = "Data\\TextChatPublic.ini";
+        public static string ChatGlobal = "Data\\TextChatGlobal.ini";
+        public static string ChatInbox = "Data\\TextChatInbox.ini";
+        public static string nro244 = Path.Combine(Application.StartupPath, "Nro_244.exe");
+        public static string nro222 = "Data\\Version222\\Dragonboy_vn_v222.exe";
+        public static string NameWindownro244 = "ragonboy244";
+        public static string NameWindownro222 = "Dragonboy222";
+
 
         public Form1()
         {
@@ -40,7 +46,15 @@ namespace QLTK_Nro_Pro
                     File.Create(string_1).Close();
                 }
             }
-
+            string version = File.ReadAllText(string_3);
+            if (version.Equals("222"))
+            {
+                cbbVersion.SelectedIndex = 0;
+            }
+            else
+            {
+                cbbVersion.SelectedIndex = 1;
+            }
             try
             {
                 string[] a = File.ReadAllText(filePath).Split('|');
@@ -303,14 +317,14 @@ namespace QLTK_Nro_Pro
 
         [DllImport("user32.dll")]
         private static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int SizeW, int SizeH, bool Repaint);
-        public static void smethod_3(int int_0)
+        public static void smethod_3(int int_0, string PathGame, string nameWindowGame)
         {
             if (!bool_0)
             {
                 bool_0 = true;
-                Process.Start(arguments: File.ReadAllLines(string_1)[int_0 - 1], fileName: string_4);
+                Process.Start(arguments: File.ReadAllLines(string_1)[int_0 - 1], fileName: PathGame);
                 Thread.Sleep(200);
-                IntPtr hWnd = FindWindow(null, "Dragonboy222");
+                IntPtr hWnd = FindWindow(null, nameWindowGame);
 
 
                 if (hWnd != IntPtr.Zero)
@@ -325,13 +339,20 @@ namespace QLTK_Nro_Pro
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            string pathGame1 = nro222;
+            string nameWindowGame1 = NameWindownro222;
+            if (cbbVersion.SelectedIndex == 1)
+            {
+                pathGame1 = nro244;
+                nameWindowGame1 = NameWindownro244;
+            }
             if (e.RowIndex >= 0)
             {
                 Thread.Sleep(500);
                 try
                 {
                     int index = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-                    smethod_3(index + 1);
+                    smethod_3(index + 1, pathGame1, nameWindowGame1);
                 }
                 catch
                 {
@@ -386,7 +407,7 @@ namespace QLTK_Nro_Pro
         private void btn_dong_Click(object sender, EventArgs e)
         {
 
-            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Dragonboy_vn_v222");
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Nro_244");
             if (process.Length == 0)
             {
                 MessageBox.Show("Đã tắt hết toàn bộ Tab game rồi mà :(", "Cường có điều muốn nói", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -948,12 +969,25 @@ namespace QLTK_Nro_Pro
                 }
                 else
                 {
-                    MessageBox.Show("Đang là phiên bản mới nhất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    MessageBox.Show("Đang là phiên bản mới nhất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
             }
 
         }
 
+        private void btnUpdateVersionNro_Click(object sender, EventArgs e)
+        {
+            if(cbbVersion.SelectedIndex == 0)
+            {
+                File.WriteAllText(string_3, "222");
+                MessageBox.Show("Bạn đã chọn " + cbbVersion.Text + " làm phiên bản login", "Thông báo");
+            }
+            else
+            {
+                File.WriteAllText(string_3, "244");
+                MessageBox.Show("Bạn đã chọn " + cbbVersion.Text + " làm phiên bản login", "Thông báo");
+            }
+        }
     }
 
     
