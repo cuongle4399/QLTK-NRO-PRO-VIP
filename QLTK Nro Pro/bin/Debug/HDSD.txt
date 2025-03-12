@@ -1,6 +1,10 @@
 Lệnh chat:
 +> cuongle: tinhnang dat biet
-
+Những tính năng đặc quyền của phiên bản:
+- Auto Dò boss
+- Auto leo top Whis
+- Auto hồi sinh trị thương bản thân tự buff hs 1 mình dc lun (namek)
+- Auto Cờ đen chống dich
 Phím tắt:
 +> A: tự đánh
 +> B: mở danh sách bạn bè
@@ -28,4 +32,5 @@ Phím tắt:
 
 Lưu ý:
 - Đối với người sử dụng QLTK thì nên giải nén và sau khi điền nik vào QLTK thì muốn đăng nhập nik nào thì click đúp chuột vào nik cần onl bên danh sách là được
-- Mọi tính năng của tool đều tập trung trong phím tắt X, ae bấm X để khám phá tính năng và sử dụng, phiên bản rất nhiều tính năng hay nhưng vận dụng sao là cách dùng của ae
+- Mọi tính năng của tool đều tập trung trong phím tắt X, ae bấm X để khám phá tính năng và sử dụng, phiên bản rất nhiều tính năng hay nhưng vận dụng sao là cách dùng của ae.
+- Auto dò boss VIP thì tắt tdlt trc khi dùng nhá
