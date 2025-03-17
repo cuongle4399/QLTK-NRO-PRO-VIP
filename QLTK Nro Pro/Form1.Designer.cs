@@ -48,9 +48,10 @@
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txtGlobal = new System.Windows.Forms.TextBox();
-            this.txtInbox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPublic = new System.Windows.Forms.TextBox();
+            this.txtInbox = new System.Windows.Forms.TextBox();
+            this.txtGlobal = new System.Windows.Forms.TextBox();
             this.button68 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnUpdateSize = new System.Windows.Forms.Button();
@@ -166,6 +167,7 @@
             this.button97 = new System.Windows.Forms.Button();
             this.button98 = new System.Windows.Forms.Button();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.button100 = new System.Windows.Forms.Button();
             this.button99 = new System.Windows.Forms.Button();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
@@ -175,10 +177,10 @@
             this.btnCapNhap = new System.Windows.Forms.Button();
             this.btnZaloSuper2 = new System.Windows.Forms.Button();
             this.btnfb = new System.Windows.Forms.Button();
-            this.button100 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -415,14 +417,11 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.check);
-            this.tabPage1.Controls.Add(this.txtGlobal);
             this.tabPage1.Controls.Add(this.txt_user);
-            this.tabPage1.Controls.Add(this.txtInbox);
             this.tabPage1.Controls.Add(this.txt_password);
-            this.tabPage1.Controls.Add(this.txtPublic);
             this.tabPage1.Controls.Add(this.txt_note);
-            this.tabPage1.Controls.Add(this.button68);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.txt_server);
@@ -442,41 +441,56 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý tài khoản";
             // 
-            // txtGlobal
+            // groupBox1
             // 
-            this.txtGlobal.Location = new System.Drawing.Point(10, 287);
-            this.txtGlobal.Multiline = true;
-            this.txtGlobal.Name = "txtGlobal";
-            this.txtGlobal.Size = new System.Drawing.Size(296, 28);
-            this.txtGlobal.TabIndex = 19;
-            // 
-            // txtInbox
-            // 
-            this.txtInbox.Location = new System.Drawing.Point(10, 321);
-            this.txtInbox.Multiline = true;
-            this.txtInbox.Name = "txtInbox";
-            this.txtInbox.Size = new System.Drawing.Size(296, 28);
-            this.txtInbox.TabIndex = 18;
+            this.groupBox1.Controls.Add(this.txtPublic);
+            this.groupBox1.Controls.Add(this.txtInbox);
+            this.groupBox1.Controls.Add(this.txtGlobal);
+            this.groupBox1.Controls.Add(this.button68);
+            this.groupBox1.Location = new System.Drawing.Point(7, 221);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(346, 134);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Nội dung chat";
             // 
             // txtPublic
             // 
-            this.txtPublic.Location = new System.Drawing.Point(10, 253);
+            this.txtPublic.Location = new System.Drawing.Point(10, 26);
             this.txtPublic.Multiline = true;
             this.txtPublic.Name = "txtPublic";
             this.txtPublic.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtPublic.Size = new System.Drawing.Size(296, 28);
+            this.txtPublic.Size = new System.Drawing.Size(245, 28);
             this.txtPublic.TabIndex = 17;
+            // 
+            // txtInbox
+            // 
+            this.txtInbox.Location = new System.Drawing.Point(10, 94);
+            this.txtInbox.Multiline = true;
+            this.txtInbox.Name = "txtInbox";
+            this.txtInbox.Size = new System.Drawing.Size(245, 28);
+            this.txtInbox.TabIndex = 18;
+            // 
+            // txtGlobal
+            // 
+            this.txtGlobal.Location = new System.Drawing.Point(10, 60);
+            this.txtGlobal.Multiline = true;
+            this.txtGlobal.Name = "txtGlobal";
+            this.txtGlobal.Size = new System.Drawing.Size(245, 28);
+            this.txtGlobal.TabIndex = 19;
             // 
             // button68
             // 
+            this.button68.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button68.Location = new System.Drawing.Point(12, 212);
+            this.button68.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button68.Location = new System.Drawing.Point(262, 28);
             this.button68.Margin = new System.Windows.Forms.Padding(4);
             this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(126, 34);
+            this.button68.Size = new System.Drawing.Size(77, 94);
             this.button68.TabIndex = 16;
-            this.button68.Text = "Update Chat";
-            this.button68.UseVisualStyleBackColor = true;
+            this.button68.Text = "Update";
+            this.button68.UseVisualStyleBackColor = false;
             this.button68.Click += new System.EventHandler(this.button68_Click);
             // 
             // groupBox2
@@ -485,16 +499,16 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtY);
             this.groupBox2.Controls.Add(this.txtX);
-            this.groupBox2.Location = new System.Drawing.Point(316, 242);
+            this.groupBox2.Location = new System.Drawing.Point(370, 221);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 113);
+            this.groupBox2.Size = new System.Drawing.Size(189, 134);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kích Thước game";
             // 
             // btnUpdateSize
             // 
-            this.btnUpdateSize.Location = new System.Drawing.Point(51, 61);
+            this.btnUpdateSize.Location = new System.Drawing.Point(30, 66);
             this.btnUpdateSize.Name = "btnUpdateSize";
             this.btnUpdateSize.Size = new System.Drawing.Size(133, 43);
             this.btnUpdateSize.TabIndex = 17;
@@ -504,7 +518,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(101, 27);
+            this.label5.Location = new System.Drawing.Point(83, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 28);
             this.label5.TabIndex = 16;
@@ -513,7 +527,7 @@
             // 
             // txtY
             // 
-            this.txtY.Location = new System.Drawing.Point(137, 27);
+            this.txtY.Location = new System.Drawing.Point(119, 26);
             this.txtY.Multiline = true;
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(47, 28);
@@ -521,7 +535,7 @@
             // 
             // txtX
             // 
-            this.txtX.Location = new System.Drawing.Point(48, 28);
+            this.txtX.Location = new System.Drawing.Point(30, 27);
             this.txtX.Multiline = true;
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(47, 28);
@@ -530,7 +544,7 @@
             // btn_sapXep
             // 
             this.btn_sapXep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sapXep.Location = new System.Drawing.Point(421, 83);
+            this.btn_sapXep.Location = new System.Drawing.Point(421, 71);
             this.btn_sapXep.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sapXep.Name = "btn_sapXep";
             this.btn_sapXep.Size = new System.Drawing.Size(126, 49);
@@ -542,7 +556,7 @@
             // btn_dong
             // 
             this.btn_dong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dong.Location = new System.Drawing.Point(421, 14);
+            this.btn_dong.Location = new System.Drawing.Point(421, 8);
             this.btn_dong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(126, 49);
@@ -1911,6 +1925,17 @@
             this.tabPage10.Text = "go Home";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
+            // button100
+            // 
+            this.button100.BackColor = System.Drawing.Color.Tan;
+            this.button100.Location = new System.Drawing.Point(345, 257);
+            this.button100.Name = "button100";
+            this.button100.Size = new System.Drawing.Size(200, 52);
+            this.button100.TabIndex = 1;
+            this.button100.Text = "Reset Lỗi Next Map";
+            this.button100.UseVisualStyleBackColor = false;
+            this.button100.Click += new System.EventHandler(this.button100_Click);
+            // 
             // button99
             // 
             this.button99.BackColor = System.Drawing.Color.Silver;
@@ -2029,17 +2054,6 @@
             this.btnfb.UseVisualStyleBackColor = false;
             this.btnfb.Click += new System.EventHandler(this.btnfb_Click);
             // 
-            // button100
-            // 
-            this.button100.BackColor = System.Drawing.Color.Tan;
-            this.button100.Location = new System.Drawing.Point(345, 257);
-            this.button100.Name = "button100";
-            this.button100.Size = new System.Drawing.Size(200, 52);
-            this.button100.TabIndex = 1;
-            this.button100.Text = "Reset Lỗi Next Map";
-            this.button100.UseVisualStyleBackColor = false;
-            this.button100.Click += new System.EventHandler(this.button100_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -2061,6 +2075,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -2226,6 +2242,7 @@
         private System.Windows.Forms.ComboBox cbbVersion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button100;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

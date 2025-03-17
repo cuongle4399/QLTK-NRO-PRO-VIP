@@ -29,6 +29,9 @@ namespace QLTK_Nro_Pro
         public static string nro222 = "Data\\Version222\\Dragonboy_vn_v222.exe";
         public static string NameWindownro244 = "ragonboy244";
         public static string NameWindownro222 = "Dragonboy222";
+        public static string prcnro244 = "Nro_244";
+        public static string prcnro222 = "Dragonboy_vn_v222";
+        private static int TabCount = 0;
 
 
         public Form1()
@@ -139,8 +142,8 @@ namespace QLTK_Nro_Pro
                 File.WriteAllText(string_1, Text);
             }
         }
-
-        public string Reserver(int x)
+       
+    public string Reserver(int x)
         {
             if (x == 13)
             {
@@ -272,13 +275,18 @@ namespace QLTK_Nro_Pro
 
         public void SortWindows()
         {
-            int num = 0;  // Vị trí cột
-            int num1 = 0; // Vị trí dòng
             if(gameWindows.Count == 0)
             {
                 MessageBox.Show("Mở game chưa ?????", "Thông báo");
                 return;
             }
+            if (int.Parse(txtX.Text) > 720 && int.Parse(txtY.Text) > 320)
+            {
+                MessageBox.Show("kích thước game phải nhỏ hơn 720 x 320 để tránh lỗi", "Thông báo");
+                return;
+            }
+            int num = 0;  // Vị trí cột
+            int num1 = 0; // Vị trí dòng
             foreach (IntPtr hWnd in gameWindows)
             {
                 if (hWnd != IntPtr.Zero)
@@ -312,7 +320,10 @@ namespace QLTK_Nro_Pro
             public int Bottom;
         }
 
+        delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
 
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
         [DllImport("user32.dll")]
         private static extern bool SetWindowText(IntPtr hWnd, string windowName);
 
@@ -410,8 +421,12 @@ namespace QLTK_Nro_Pro
 
         private void btn_dong_Click(object sender, EventArgs e)
         {
-
-            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Nro_244");
+            string prc = "Dragonboy_vn_v222";
+            if (cbbVersion.SelectedIndex == 1)
+            {
+                prc = "Nro_244";
+            }
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName(prc);
             if (process.Length == 0)
             {
                 MessageBox.Show("Đã tắt hết toàn bộ Tab game rồi mà :(", "Cường có điều muốn nói", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -426,11 +441,7 @@ namespace QLTK_Nro_Pro
        
         private void btn_sapXep_Click(object sender, EventArgs e)
         {
-            if(int.Parse(txtX.Text) > 720 && int.Parse(txtY.Text) > 320)
-            {
-                MessageBox.Show("kích thước game phải nhỏ hơn 720 x 320 để tránh lỗi", "Thông báo");
-                return;
-            }
+           
             SortWindows();
         }
         private void nextMap (int x)
@@ -1012,6 +1023,7 @@ namespace QLTK_Nro_Pro
             File.WriteAllText("Data/LoadMap.ini", "F|-1");
             MessageBox.Show("Đã Khôi phục NextMap khắc phục lỗi", "Thông báo");
         }
+
     }
 
     
