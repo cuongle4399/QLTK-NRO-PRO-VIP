@@ -1973,9 +1973,10 @@
             this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label7.Location = new System.Drawing.Point(3, 38);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(330, 52);
+            this.label7.Size = new System.Drawing.Size(330, 77);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Lưu ý : Bản 222 login cực nhanh, bản 244 shop ký gửi có hiện tên người ký ";
+            this.label7.Text = "Lưu ý : Bản 222 login cực nhanh, bản 244 shop ký gửi có hiện tên người ký  và có " +
+    "auto quay thượng đế";
             // 
             // btnUpdateVersionNro
             // 
